@@ -1,1 +1,75 @@
 https://peps.python.org/pep-0257/
+
+https://www.sphinx-doc.org/
+https://www.sphinx-doc.org/en/master/usage/index.html
+
+-------------------------------------------------
+
+C:\Users\julien\workspace\[python]\07-best-practices\03\docs(master)
+(venv) λ sphinx-quickstart.exe
+Bienvenue dans le kit de démarrage rapide de Sphinx 8.1.3.
+
+Veuillez saisir des valeurs pour les paramètres suivants (tapez Entrée pour accepter la valeur par défaut, lorsque celle-ci est indiquée entre crochets).
+
+Chemin racine sélectionné : .
+
+Vous avez deux options pour l'emplacement du répertoire de construction de la sortie de Sphinx.
+Soit vous utilisez un répertoire "_build" dans le chemin racine, soit vous séparez les répertoires "source" et "build" dans le chemin racine.
+> Séparer les répertoires source et de sortie (y/n) [n]:
+
+Le nom du projet apparaîtra à plusieurs endroits dans la documentation construite.
+> Nom du projet: game
+> Nom(s) de(s) l'auteur(s): judana
+> Version du projet []: 0.0.1
+
+Si les documents doivent être rédigés dans une langue autre que l’anglais, vous pouvez sélectionner une langue ici grâce à son identifiant. Sphinx utilisera ensuite cette langue pour traduire les textes que lui-même génère.
+
+Pour une liste des identifiants supportés, voir
+https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
+> Langue du projet [en]:
+
+Fichier en cours de création C:\Users\julien\workspace\[python]\07-best-practices\03\docs\conf.py.
+Fichier en cours de création C:\Users\julien\workspace\[python]\07-best-practices\03\docs\index.rst.
+Fichier en cours de création C:\Users\julien\workspace\[python]\07-best-practices\03\docs\Makefile.
+Fichier en cours de création C:\Users\julien\workspace\[python]\07-best-practices\03\docs\make.bat.
+
+Terminé : la structure initiale a été créée.
+
+Vous devez maintenant compléter votre fichier principal C:\Users\julien\workspace\[python]\07-best-practices\03\docs\index.rst et créer d'autres fichiers sources de documentation. Utilisez le Makefile pour construire la documentation comme ceci :
+   make builder
+où « builder » est l'un des constructeurs disponibles, tel que html, latex, ou linkcheck.
+
+-------------------------------------------------
+
+C:\Users\julien\workspace\[python]\07-best-practices\03(master)
+(venv) λ .\docs\make.bat html
+Sphinx v8.1.3 en cours d'exécution
+chargement des traductions [en]... fait
+création du répertoire de sortie... fait
+construction en cours [mo] : cibles périmées pour les fichiers po 0
+écriture...
+construction [html] : cibles périmées pour les fichiers sources 1
+mise à jour de l'environnement : [nouvelle configuration] 1 ajouté(s), 0 modifié(s), 0 supprimé(s)
+lecture des sources... [100%] index
+recherche des fichiers périmés... aucun résultat trouvé
+Environnement de sérialisation... fait
+vérification de la cohérence... fait
+documents en préparation... fait
+copie des ressources...
+Copie des fichiers statiques...
+Écriture du résultat du modèle évalué dans C:\Users\julien\workspace\[python]\07-best-practices\03\docs\_build\html\_static\basic.css
+Écriture du résultat du modèle évalué dans C:\Users\julien\workspace\[python]\07-best-practices\03\docs\_build\html\_static\documentation_options.js
+Écriture du résultat du modèle évalué dans C:\Users\julien\workspace\[python]\07-best-practices\03\docs\_build\html\_static\language_data.js
+Écriture du résultat du modèle évalué dans C:\Users\julien\workspace\[python]\07-best-practices\03\docs\_build\html\_static\alabaster.css
+Copie des fichiers statiques: fait
+copie des fichiers complémentaires...
+copie des fichiers complémentaires: fait
+copie des ressources: fait
+écriture... [100%] index
+génération des index... genindex fait
+Écriture des pages additionnelles... search fait
+Export de l'index de recherche en English (code: en)... fait
+Export de l'inventaire des objets... fait
+La compilation a réussi.
+
+Les pages HTML sont dans _build\html.
